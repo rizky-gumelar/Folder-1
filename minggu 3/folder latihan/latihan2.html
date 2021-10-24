@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan2-Tabel</title>
+
+    <style>
+        body{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        h1{
+            font-family: sans-serif;
+            color: white;
+            text-align: center;
+            font-size: 45px;
+        }
+
+        h2{
+            color:rgb(255, 255, 255);
+            padding: 0px;
+            text-align: center;
+        }
+        
+        h3{
+            color: rgb(19, 73, 145);
+        }
+
+        h4{
+            color: rgb(19, 73, 145);
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            margin: auto;
+            width: 70%;
+        }
+
+        th {
+            background-color: rgb(34, 34, 104);
+            color: oldlace;
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+    }
+
+        td {
+            background-color: mintcream;
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        #border th{
+            border: 5px solid black;
+        }
+
+        #border td{
+            border: 5px solid black;
+        }
+
+        .video{
+            margin: auto;
+            padding: 0px 30px;
+            width: 600px;
+            height: 800px;
+            background-color:rgba(255, 255, 255, 0.75);  
+            backdrop-filter: blur(20px);
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 100px;
+        }
+        
+        .audio{
+            margin: auto;
+            padding: 0px 30px;
+            width: 600px;
+            height: 250px;
+            background-color:rgba(255, 255, 255, 0.75);  
+            backdrop-filter: blur(20px);
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 100px;
+        }
+
+        .pdf_plugin{
+            margin: auto;
+            padding: 0px 30px;
+            width: 600px;
+            height: 500px;
+            background-color:rgba(255, 255, 255, 0.75);  
+            backdrop-filter: blur(20px);
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body style="background-color:rgb(19, 73, 145)">
+    <h1>HTML Table</h1>
+    <br>
+
+    <table style="margin-bottom: 60px;">
+        <h2>Tabel tanpa border</h2>
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+        </tr>
+        <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+        </tr>
+    </table>
+
+
+
+    <table id="border" style="margin-bottom: 100px;">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+        </tr>
+        <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+        </tr>
+    </table>
+
+    
+
+    <h2>Media</h2>
+
+    <div class="video">
+        <br>
+        <h3>Video</h3>
+        <video width="360" height="640" controls>
+            <source src="../video/Videos.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="audio">
+        <br>
+        <h3>Audio</h3>
+        <h4>Sapientdream - Pastlives</h4>
+        <audio controls>
+            <source src="../audio/Sapientdream-Pastlives.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="pdf_plugin">
+        <br>
+        <h3>Plugin</h3>
+        <h4>Praktikum Minggu 4</h4>
+        <embed width="500" height="300" src="../plugin/Minggu 3-Praktikum.pdf">
+    </div>
+</body>
+</html>

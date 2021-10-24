@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Belajar Website</title> <!--Judul pada tab-->
+        <link rel="stylesheet" href="style.css"> 
+        <!-- link digunakan untuk menghubungkan file css ke html -->
+        <style>
+            /*selector, property, value*/
+            /* css bisa melalui 3 cara yaitu inline css, internal css, eksternal css */
+            @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+            h1 {
+                font-family: 'Bebas Neue', cursive;
+                font-size: 20px;
+                color: #ff0062;
+                background: black;
+                margin:20px;
+                border: 2px solid yellow;
+                padding: 10px;
+             }
+            a {
+                font-size: 20px;
+                text-decoration: none;
+                display: inline-block;
+                background-color: turquoise;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding: 10px;
+                margin: 20px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <h1>Rizky Syah Gumelar</h1>
+        <br>
+        <h1 id="smith" style="text-align: center;">Smith Jensen</h1>
+        <br>
+        <a href="https://www.google.com" target="_blank" style="color:red">Klik gugel</a>
+            <!--Tag dan atribut untuk link, pakai https/http agar tidak error-->
+            <!--atribut target="_blank" digunakan agar saat link diklik membuka tab baru pada browser-->
+            <br> <!--tag untuk enter (break line)-->
+        <a href="https://www.instagram.com/rizkysyahg" target="_blank">ig saya</a>
+            <br>
+        
+        <img src="https://avatars.githubusercontent.com/u/91964713?v=4" alt="github rizky-gumelar">
+            <!--tag untuk spawn gambar, boleh gambar dari lokal boleh dari internet, atribut alt digunakan sebagai alternatif text jika gambar crash-->
+            <br>
+
+        <table border="1">
+            <!--
+                tag untuk tabel, (atribut border, not recommended karena border adalah tugas dari css)
+                <tr> = table row (baris)
+                <td> = table data column (kolom)  diletakkan di dalam <tr>              
+            -->
+            <tr>
+                <td>No</td>
+                <td>Nama</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Rizky Syah Gumelar</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Smitty Werben Jagerman Jensen</td>
+            </tr>
+        </table>
+        <br>
+        
+        <form>
+            <!--tag digunakan untuk penginputan-->
+            <label>
+                Nama Lengkap : <br>
+                <input type="text" placeholder="Masukkan Nama">
+            </label>
+            <br>
+            <br>
+            <label>
+                Jenis Kelamin : <br>
+                <select>
+                    <option>Laki-laki</option>
+                    <option>Perempuan</option>
+                    <option>Tidak Terdefinisi</option>
+                </select>
+            </label>
+            <br>
+            <br>
+
+                Skill : <br>
+            <label>
+                <input type="checkbox"> Tidur
+            </label>
+            <label>
+                <input type="checkbox"> Mengeluh
+            </label>
+            <label>
+                <input type="checkbox"> Buang-buang duit
+            </label>
+            <br>
+            <br>
+
+            <label>
+                Pesan : <br>
+                <textarea placeholder="ketik pesan jika mau masuk surga"></textarea>
+            </label>
+            <br>
+            <br>
+
+            <input type="submit">
+        </form>
+        <br>
+        <br>
+
+
+        <div id="" class=""> <!--tipe blok-->
+            //block
+        </div>
+        <span> <!--inline-->
+            //inline
+        </span>
+        <span>
+            //inline
+        </span>
+
+    </body>
+</html>

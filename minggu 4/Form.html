@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPDB Jalur Zonasi 2021</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="judul">
+        <h1>FORMULIR PPDB JALUR ZONASI TAHUN 2021</h1>
+        <h1>SMA NEGERI 1 JAMBU</h1>
+    </div>
+    
+    <form action="data.php" method="post" >
+        <div class="kotak1">
+            <div class="subjudul">
+                <h2>INFO PENDAFTARAN</h2>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <td style="width: 5%;">1</td>
+                        <td style="width: 15%;"><label for="fNISN">NISN</label></td>
+                        <td style="width: 5%; text-align: center;"> : </td>
+                        <td style="width: 100%;"><input class="form-control" type="number" id="fNISN" name="fNISN" placeholder="Masukkan NISN" required></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><label for="fAsalSekolah">Asal Sekolah</label></td>
+                        <td style="text-align: center;"> : </td>
+                        <td><input class="form-control" type="text" id="fAsalSekolah" name="fAsalSekolah" placeholder="Contoh : SMP Negeri 1 Jeruk" required></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><label for="fname">Tahun Lulus</label></td>
+                        <td style="text-align: center;"> : </td>
+                        <td><input class="form-control" type="number" id="fTahunLulus" name="fTahunLulus" placeholder="Masukkan Tahun Lulus" required></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="kotak2">
+            <div class="subjudul">
+                <h2>DATA CALON PESERTA</h2>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <td style="width: 5%;">1</td>
+                        <td style="width: 15%;"><label for="fNama">Nama Lengkap</label></td>
+                        <td style="width: 5%; text-align: center;"> : </td>
+                        <td style="width: 100%;"><input class="form-control" type="text" id="fNama" name="fNama" placeholder="Masukkan Nama Lengkap" required></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><label for="fNIK">NIK</label></td>
+                        <td style="text-align: center;"> : </td>
+                        <td><input class="form-control" type="number" id="fNIK" name="fNIK" placeholder="Masukkan NIK" required></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><label for="fTempatLahir">Tempat Lahir</label></td>
+                        <td style="text-align: center;"> : </td>
+                        <td><input class="form-control" type="text" id="fTempatLahir" name="fTempatLahir" placeholder="Contoh : Jepara" required></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><label for="fTanggalLahiir">Tanggal Lahir</label></td>
+                        <td style="text-align: center;"> : </td>
+                        <td><input class="form-control" type="date" name="fTanggalLahiir" id="fTanggalLahiir" placeholder="dd/mm/yyyy" required></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><label for="fJenisKelamin">Jenis Kelamin</label></td>
+                        <td style="text-align: center;"> : </td>
+                        <td>
+                            <select class="form-control" name="fJenisKelamin" id="fJenisKelamin" required>
+                                <option value="">::Pilih Jenis Kelamin::</option>
+                                <option value="L">Laki-laki</option>
+                                <option value="P">Perempuan</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><label for="fAlamat">Alamat</label></td>
+                        <td style="text-align: center;"> : </td>
+                        <td><textarea class="textarea" name="fAlamat" id="fAlamat" cols="30" rows="3" required placeholder="Masukkan Alamat"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><label for="fDesa">a. Desa / Kelurahan</label></td>
+                        <td style="text-align: center;"> : </td>
+                        <td><input class="form-control" type="text" name="fDesa" id="fDesa" required placeholder="Contoh : Desa Keling"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><label for="fKec">b. Kecamatan</label></td>
+                        <td style="text-align: center;"> : </td>
+                        <td><input class="form-control" type="text" name="fKec" id="fKec" required placeholder="Contoh : Kecamatan Keling"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><label for="fKab">c. Kabupaten</label></td>
+                        <td style="text-align: center;"> : </td>
+                        <td><input class="form-control" type="text" name="fKab" id="fKab" required placeholder="Contoh : Kabupaten Jepara"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><label for="fProv">d. Provinsi</label></td>
+                        <td style="text-align: center;"> : </td>
+                        <td><input class="form-control" type="text" name="fProv" id="fProv" required placeholder="Contoh : Provinsi Jawa Tengah"></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><label for="fEmail">Email Aktif</label></td>
+                        <td style="text-align: center;"> : </td>
+                        <td><input class="form-control" type="email" name="fEmail" id="fEmail" required placeholder="Contoh : abcde123@gmail.com"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="kotak3">
+            <div class="subjudul">
+                <h2>DATA ORANG TUA</h2>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <td style="width: 5%;">1</td>
+                        <td style="width: 15%;"><label for="fKK">Nomor Kartu Keluarga</label></td>
+                        <td style="width: 5%; text-align: center;"> : </td>
+                        <td style="width: 100%;"><input class="form-control" type="number" id="fKK" name="fKK" placeholder="Masukkan Nomor KK" required></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><label for="fNamaAyah">Nama Ayah Kandung</label></td>
+                        <td style="text-align: center;"> : </td>
+                        <td><input class="form-control" type="text" id="fNamaAyah" name="fNamaAyah" placeholder="Masukkan Nama Ayah Kandung" required></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><label for="fAgamaAyah">Agama</label></td>
+                        <td style="text-align: center;"> : </td>
+                        <td>
+                            <select class="form-control" name="fAgamaAyah" id="fAgamaAyah" required>
+                                <option value="">::Pilih Agama::</option>
+                                <option value="Islam">Islam</option>
+                                <option value="Kristen">Kristen</option>
+                                <option value="Katolik">Katolik</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Budha">Budha</option>
+                                <option value="Konghucu">Konghucu</option>
+                                <option value="AgamaLain">Lainnya</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="strip">
+                        <td>4</td>
+                        <td><label for="fPekerjaanAyah">Pekerjaan</label></td>
+                        <td style="text-align: center;"> : </td>
+                        <td><input class="form-control" type="text" id="fPekerjaanAyah" name="fPekerjaanAyah" placeholder="Masukkan Pekerjaan" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td><label for="fNamaIbu">Nama Ibu Kandung</label></td>
+                        <td style="text-align: center;"> : </td>
+                        <td><input class="form-control" type="text" id="fNamaIbu" name="fNamaIbu" placeholder="Masukkan Nama Ibu Kandung" required></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><label for="fAgamaIbu">Agama</label></td>
+                        <td style="text-align: center;"> : </td>
+                        <td>
+                            <select class="form-control" name="fAgamaIbu" id="fAgamaIbu" required>
+                                <option value="">::Pilih Agama::</option>
+                                <option value="Islam">Islam</option>
+                                <option value="Kristen">Kristen</option>
+                                <option value="Katolik">Katolik</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Budha">Budha</option>
+                                <option value="Konghucu">Konghucu</option>
+                                <option value="AgamaLain">Lainnya</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="strip">
+                        <td>7</td>
+                        <td><label for="fPekerjaanIbu">Pekerjaan</label></td>
+                        <td style="text-align: center;"> : </td>
+                        <td><input class="form-control" type="text" id="fPekerjaanIbu" name="fPekerjaanIbu" placeholder="Masukkan Pekerjaan" required></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><label for="fAlamatOrtu">Alamat Orang Tua</label></td>
+                        <td style="text-align: center;"> : </td>
+                        <td><textarea class="textarea" name="fAlamatOrtu" id="fAlamatOrtu" cols="30" rows="3" required placeholder="Masukkan Alamat"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><label for="fDesaOrtu">a. Desa / Kelurahan</label></td>
+                        <td style="text-align: center;"> : </td>
+                        <td><input class="form-control" type="text" name="fDesaOrtu" id="fDesaOrtu" required placeholder="Contoh : Desa Keling"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><label for="fKecOrtu">b. Kecamatan</label></td>
+                        <td style="text-align: center;"> : </td>
+                        <td><input class="form-control" type="text" name="fKecOrtu" id="fKecOrtu" required placeholder="Contoh : Kecamatan Keling"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><label for="fKabOrtu">c. Kabupaten</label></td>
+                        <td style="text-align: center;"> : </td>
+                        <td><input class="form-control" type="text" name="fKabOrtu" id="fKabOrtu" required placeholder="Contoh : Kabupaten Jepara"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><label for="fProvOrtu">d. Provinsi</label></td>
+                        <td style="text-align: center;"> : </td>
+                        <td><input class="form-control" type="text" name="fProvOrtu" id="fProvOrtu" required placeholder="Contoh : Provinsi Jawa Tengah"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="kotak-submit">
+            <input class="submit-button" type="submit" value="Submit">
+        </div>
+        
+    </form>
+</body>
+</html>

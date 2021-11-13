@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body class="bg">
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="cv-name.pdf">Download CV</a> |
+        <a href="kontak.html">Contact</a> |
+        <a href="tentang.html">About me</a> | 
+        <select class="selectColor" onchange="changeColor (this)">
+            <option value="#17171f">Black</option>
+            <option value="#a82c43">Red</option>
+            <option value="#393da3">Blue</option>
+            <option value="#2da14c">Green</option>
+            <option value="#5c008a">Purple</option>
+        </select>
+    </nav>
+
+    <script>
+        function changeColor(getColor){
+            let bg = document.querySelector('.bg');
+            let selectColor = getColor.value;
+            bg.style.background =selectColor;
+        }
+    </script>
+
+    <hr />
+
+    <article class="tentang">
+        <h1>Tentang Saya </h1>
+        <p>
+            Hi, saya adalah web developer.
+            Saat ini sedang belajar HTML.
+        </p>
+        <p>
+            Saya masih baru dalam web development, karena itu
+            saya tidak akan pernah berhenti belajar.
+        </p>
+        <p>
+            Saya ingin menguasai bahasa HTML, CSS, dan Javascript.
+            Simak video lengkap tentang saya.
+        </p>
+        <p>
+            <video loop autoplay width="40%">
+                <source src="video/video-about.mp4" type="video/mp4"/>
+            </video>
+        </p>
+    </article>
+    <hr>
+    <footer style="text-align: center;">
+        <p>Copyright &copy; 2021 Rizky Gumelar.</p>
+    </footer>
+</body>
+</html>

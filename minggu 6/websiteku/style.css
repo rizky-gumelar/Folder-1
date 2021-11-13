@@ -1,0 +1,75 @@
+
+body{
+    color: white;
+    font-family: 'Cabin', sans-serif;
+}
+
+nav{
+    font-weight: bold;
+    padding: 1rem;
+    padding: 15px;
+}
+
+nav a{
+    text-decoration: none;
+    margin: 10px;
+    padding: 6px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+nav select{
+    text-decoration: none;
+    margin: 10px;
+    padding: 8px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+header{
+    margin-top: 1rem;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table th{
+    border: white solid 2px;
+}
+
+table td{
+    border: white solid 2px;
+}
+
+.tentang{
+    text-align: center;
+}
+
+.kontak{
+    text-align: center;
+}
+
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    background: #17171f;
+    user-select: none;
+    white-space: nowrap;
+
+
+    
+}
+
+.selectColor{
+    position: relative;
+    border-right: 10px solid white;
+    border: none;
+
+}

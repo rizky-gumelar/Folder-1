@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+
+        body{
+            background-color: darkslategray;
+        }
+
+        .font{
+            color: darkslategray;
+            font-weight: bold;
+        }
+
+        input[type="number"]{
+            padding: 8px;
+            width: 95%;
+            background: white;
+            border: 0;
+            font-size: 10pt;
+            margin: 6px 0px;
+        }
+
+        input[type="button"]{
+            color: darkslategray;
+            border-radius: 20px;
+            padding: 8px;
+            width: 30px;
+            height: 30px;
+            background: white;
+            border: 0;
+            font-size: 10pt;
+            font-weight: bold;
+            margin: 6px;
+        }
+
+        .button{
+            margin: auto;
+            width: fit-content;
+        }
+
+        .calc{
+            margin: auto;
+            width: 70%;
+            padding: 2rem 4rem;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .res{
+            margin: auto;
+            width: 70%;
+            padding: 1rem 4rem;
+            border-radius: 0 0 15px 15px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function fAdd(){
+            var a = document.forms["kalkulator"]["fnilaiA"].value;
+            var b = document.forms["kalkulator"]["fnilaiB"].value;
+            var c = Number(a) + Number(b);
+            document.getElementById("hasil").innerHTML=c;
+        }
+
+        function fSub(){
+            var a = document.forms["kalkulator"]["fnilaiA"].value;
+            var b = document.forms["kalkulator"]["fnilaiB"].value;
+            var c = Number(a) - Number(b);
+            document.getElementById("hasil").innerHTML=c;
+        }
+
+        function fTimes(){
+            var a = document.forms["kalkulator"]["fnilaiA"].value;
+            var b = document.forms["kalkulator"]["fnilaiB"].value;
+            var c = Number(a) * Number(b);
+            document.getElementById("hasil").innerHTML=c;
+        }
+
+        function fDiv(){
+            var a = document.forms["kalkulator"]["fnilaiA"].value;
+            var b = document.forms["kalkulator"]["fnilaiB"].value;
+            var c = Number(a) / Number(b);
+            document.getElementById("hasil").innerHTML=c;
+        }
+    </script>
+</head>
+<body>
+    
+    <h2 style="text-align: center; color: gainsboro;">Kalkulator Sederhana</h2>
+
+    <div class="calc" style="background-color: lightgray;">
+        <form name="kalkulator">
+            <div>
+                <label class="font" for="nilaiA">Nilai 1:</label>
+                <input type="number" name="fnilaiA" id="nilaiA">
+            </div>
+            <div>
+                <label class="font" for="nilaiB">Nilai 2:</label>
+                <input type="number" name="fnilaiB" id="nilaiB">
+            </div>
+            <div class="button">
+                <input type="button" value="+" onclick="fAdd()">
+                <input type="button" value="-" onclick="fSub()">
+                <input type="button" value="*" onclick="fTimes()">
+                <input type="button" value="/" onclick="fDiv()">
+            </div>
+        </form>
+        
+    </div>
+    <div>
+        <div class="res" style="background-color: slategray;">
+            <div class="font" style="color: white;">Hasil</div>
+            <div class="font" style="color: white; font-size: larger;" id="hasil"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
